@@ -288,9 +288,39 @@ export default function Paradox() {
               style={{
                 marginTop: "0.5rem",
                 borderTop: "1px solid rgba(57,255,20,0.15)",
-                paddingTop: "0.5rem",
+                paddingTop: "1.25rem",
               }}
-            />
+            >
+              <button
+                type="button"
+                onClick={handleSubmit as unknown as React.MouseEventHandler}
+                disabled={phase === "glitching"}
+                className="font-mono"
+                style={{
+                  background: "transparent",
+                  border: "1px solid rgba(57,255,20,0.4)",
+                  color: "#39FF14",
+                  fontSize: "0.7rem",
+                  letterSpacing: "0.18em",
+                  padding: "0.6rem 1.5rem",
+                  cursor: phase === "glitching" ? "not-allowed" : "pointer",
+                  opacity: phase === "glitching" ? 0.4 : 1,
+                  transition: "border-color 0.2s, opacity 0.2s, background 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                  if (phase !== "glitching") {
+                    e.currentTarget.style.borderColor = "rgba(57,255,20,0.9)";
+                    e.currentTarget.style.background = "rgba(57,255,20,0.06)";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(57,255,20,0.4)";
+                  e.currentTarget.style.background = "transparent";
+                }}
+              >
+                PROCEED
+              </button>
+            </div>
           </div>
         )}
 

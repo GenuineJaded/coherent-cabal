@@ -364,13 +364,22 @@ export default function Home() {
             maxWidth: "680px",
             margin: "0 auto",
             padding: "0 2rem",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <span
             className="font-mono"
-            style={{ fontSize: "0.6rem", letterSpacing: "0.12em", color: "#1A1A1E", opacity: 0.25 }}
+            style={{ fontSize: "0.6rem", letterSpacing: "0.1em", color: "#1A1A1E", opacity: 0.3 }}
           >
-            coherent-cabal.com
+            resonant frequency tuning
+          </span>
+          <span
+            className="font-mono"
+            style={{ fontSize: "0.6rem", letterSpacing: "0.08em", color: "#1A1A1E", opacity: 0.3 }}
+          >
+            michaelmistree@mistree.space
           </span>
         </div>
       </footer>

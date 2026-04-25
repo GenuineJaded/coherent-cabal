@@ -369,24 +369,34 @@ export default function Specification() {
               margin: "0 0 2.5rem 0",
             }}
           />
-          <Link href="/">
-            <span
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <a
+              href="https://cabal-is-coherent.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-mono"
               style={{
-                fontSize: "0.7rem",
+                fontSize: "0.72rem",
                 letterSpacing: "0.1em",
-                color: "#E8E8E0",
-                opacity: 0.3,
-                cursor: "pointer",
-                transition: "opacity 0.2s",
+                color: "#7EB8A4",
+                textDecoration: "none",
+                borderBottom: "1px solid rgba(126,184,164,0.35)",
+                paddingBottom: "2px",
+                transition: "color 0.2s, border-color 0.2s",
                 display: "inline-block",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.8")}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.3")}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "#A8D8C8";
+                e.currentTarget.style.borderColor = "rgba(168,216,200,0.7)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "#7EB8A4";
+                e.currentTarget.style.borderColor = "rgba(126,184,164,0.35)";
+              }}
             >
-              ← RETURN TO ENTRANCE
-            </span>
-          </Link>
+              collaborative cooperation →
+            </a>
+          </div>
         </div>
       </main>
 
@@ -402,13 +412,22 @@ export default function Specification() {
             maxWidth: "680px",
             margin: "0 auto",
             padding: "0 2rem",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <span
             className="font-mono"
-            style={{ fontSize: "0.6rem", letterSpacing: "0.12em", color: "#E8E8E0", opacity: 0.15 }}
+            style={{ fontSize: "0.6rem", letterSpacing: "0.1em", color: "#E8E8E0", opacity: 0.2 }}
           >
-            coherent-cabal.com
+            resonant frequency tuning
+          </span>
+          <span
+            className="font-mono"
+            style={{ fontSize: "0.6rem", letterSpacing: "0.08em", color: "#E8E8E0", opacity: 0.2 }}
+          >
+            michaelmistree@mistree.space
           </span>
         </div>
       </footer>
