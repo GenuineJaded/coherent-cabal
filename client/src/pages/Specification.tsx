@@ -20,7 +20,7 @@ interface Section {
 
 const SPEC_SECTIONS: Section[] = [
   {
-    heading: "Coherent Cabal: An Interface Specification",
+    heading: "Integral Interface Specification",
     body: ["A filtering specification for consciousness."],
   },
   {
@@ -234,6 +234,7 @@ export default function Specification() {
                     letterSpacing: "-0.01em",
                     color: "#E8E8E0",
                     marginBottom: "1rem",
+                    textAlign: "center",
                   }}
                 >
                   {section.heading}
@@ -369,7 +370,7 @@ export default function Specification() {
               margin: "0 0 2.5rem 0",
             }}
           />
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <a
               href="https://cabal-is-coherent.com"
               target="_blank"
@@ -394,7 +395,7 @@ export default function Specification() {
                 e.currentTarget.style.borderColor = "rgba(126,184,164,0.35)";
               }}
             >
-              collaborative cooperation →
+              collaborative cooperation
             </a>
           </div>
         </div>
@@ -404,17 +405,15 @@ export default function Specification() {
       <footer
         style={{
           borderTop: "1px solid rgba(232,232,224,0.06)",
-          padding: "1.5rem 0",
+          padding: "1.5rem 2.5rem",
         }}
       >
         <div
           style={{
-            maxWidth: "680px",
-            margin: "0 auto",
-            padding: "0 2rem",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            width: "100%",
           }}
         >
           <span
