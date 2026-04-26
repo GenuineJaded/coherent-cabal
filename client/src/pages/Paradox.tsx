@@ -202,7 +202,7 @@ export default function Paradox() {
                   letterSpacing: "0.04em",
                 }}
               >
-                Even an enter is an entrance.
+                Even an enter in is an entrance thin.
               </div>
 
               {/* Input line */}

@@ -233,7 +233,7 @@ export default function Specification() {
                     lineHeight: 1.15,
                     letterSpacing: "-0.01em",
                     color: "#E8E8E0",
-                    marginBottom: "1rem",
+                    marginBottom: "3rem",
                     textAlign: "center",
                   }}
                 >
@@ -367,10 +367,10 @@ export default function Specification() {
             style={{
               border: "none",
               borderTop: "1px solid rgba(232,232,224,0.1)",
-              margin: "0 0 2.5rem 0",
+              margin: "0",
             }}
           />
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={{ display: "flex", justifyContent: "center", padding: "1.5rem 0" }}>
             <a
               href="https://cabal-is-coherent.com"
               target="_blank"
@@ -401,7 +401,7 @@ export default function Specification() {
         </div>
       </main>
 
-      {/* Footer */}
+      {/* Footer — padding matches the 1.5rem above the link so spacing is equal top and bottom */}
       <footer
         style={{
           borderTop: "1px solid rgba(232,232,224,0.06)",
