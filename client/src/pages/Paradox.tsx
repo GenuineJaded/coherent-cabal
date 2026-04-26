@@ -232,7 +232,7 @@ export default function Paradox() {
                 fontSize: "clamp(0.85rem, 2vw, 1rem)",
                 lineHeight: 1.7,
                 color: "#39FF14",
-                marginBottom: "0.5rem",
+                marginBottom: "1rem",
                 letterSpacing: "0.03em",
               }}
             >
@@ -242,15 +242,21 @@ export default function Paradox() {
               className="font-mono"
               style={{
                 fontSize: "clamp(0.75rem, 1.8vw, 0.9rem)",
-                lineHeight: 1.8,
+                lineHeight: 2,
                 color: "rgba(57,255,20,0.7)",
                 marginBottom: "1.5rem",
                 letterSpacing: "0.02em",
               }}
             >
-              Enter anything to proceed. A specification. A grocery list. A contradiction.
+              The final filter is not a test of knowledge.<br />
+              It is a test of tolerance.<br />
               <br />
-              Anything passes. Press Enter.
+              Enter a paradox you live inside.<br />
+              Something you hold without resolving.<br />
+              A contradiction that hasn't broken you yet.<br />
+              <br />
+              <span style={{ opacity: 0.45 }}>Anything passes. The system is not judging the content.</span><br />
+              <span style={{ opacity: 0.45 }}>It is registering that you tried.</span>
             </div>
 
             <form onSubmit={handleSubmit} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
