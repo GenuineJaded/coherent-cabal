@@ -87,7 +87,7 @@ const sections = [
   { body: `There appears to be a mismatch between what we've built and how much of us has actually grown up. Our systems have continued to grow in complexity and sophistication. Although a lot of our internal wiring hasn't had a chance to catch up yet.` },
   { body: `Most people can feel this even if they can't name it — something running beneath the surface that never got integrated, and structures designed to exploit that gap rather than close it.` },
   { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, I find myself whole rather than fragmented.` },
-  { body: `If you're here, chances are - you are not fragmented, and may in fact have remained whole as well.`, italic: true },
+  { body: `If you're here, chances are - you are not fragmented, and may in fact have remained whole as well.`, italic: true, extraSpace: true },
   { body: `Regardless of the irregardless scar - here you are.`, italic: true, align: "right" },
 ];
 
@@ -95,7 +95,7 @@ const sections2 = [
   { body: `Most spaces aren't built for people who stayed whole. They're built for engagement, for performance, for the kind of participation that requires you to flatten yourself to fit. Communities that claim authenticity but still demand a specific shape. Platforms that reward fragmentation because fragments are easier to circulate.` },
   { body: `Many people are discovering this tension now — not because they changed, but because the environment did.` },
   { body: `Some people adapted to this. Some people couldn't, or wouldn't.` },
-  { body: `This space is for the second group — not because they failed at adapting, but because they succeeded at something harder.`, italic: true },
+  { body: `This space is for the second group — not because they failed at adapting, but because they succeeded at something harder.`, italic: true, extraSpace: true },
 ];
 
 const interests = [
@@ -117,7 +117,7 @@ const sections4 = [
 
 const sections5 = [
   { body: `There's a longer document that describes how this works — what's necessary, what isn't, how the space regulates itself. It's precise, functional, and cooler in tone than what you're reading now.` },
-  { body: `That's intentional. The warmth is here, at the entrance. What's inside is architecture.`, italic: true },
+  { body: `That's intentional. The warmth is here, at the entrance. What's inside is architecture.`, italic: true, extraSpace: true },
 ];
 
 export default function Home() {
@@ -134,7 +134,7 @@ export default function Home() {
     marginBottom: "1.5rem",
     fontWeight: 300,
     color: "#1A1A1E",
-    letterSpacing: "0.01em", // Tiny widening of the text
+    letterSpacing: "0.01em",
   };
 
   return (
@@ -186,7 +186,7 @@ export default function Home() {
               fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
               textAlign: (s as any).align === "right" ? "right" : "left",
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
-              marginTop: (s as any).align === "right" ? "-3.5rem" : "0", // Calibrated for serif font
+              marginTop: (s as any).align === "right" ? "-3.5rem" : ((s as any).extraSpace ? "3rem" : "0"),
               paddingRight: (s as any).align === "right" ? "1rem" : "0",
               position: "relative",
               zIndex: (s as any).align === "right" ? 10 : 1
@@ -206,7 +206,8 @@ export default function Home() {
               ...bodyStyle,
               fontStyle: s.italic ? "italic" : "normal",
               fontWeight: s.italic ? 400 : 300,
-              marginBottom: s.italic ? "2.25rem" : "1.5rem"
+              marginBottom: s.italic ? "2.25rem" : "1.5rem",
+              marginTop: (s as any).extraSpace ? "3rem" : "0"
             }}
           >
             {s.body}
@@ -247,7 +248,8 @@ export default function Home() {
               ...bodyStyle,
               fontStyle: s.italic ? "italic" : "normal",
               fontWeight: s.italic ? 400 : 300,
-              marginBottom: s.italic ? "2.25rem" : "1.5rem"
+              marginBottom: s.italic ? "2.25rem" : "1.5rem",
+              marginTop: (s as any).extraSpace ? "3rem" : "0"
             }}
           >
             {s.body}
