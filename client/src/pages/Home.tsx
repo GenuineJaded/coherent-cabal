@@ -86,7 +86,7 @@ const sections = [
   { body: `There appears to be a mismatch between what we've built and how much of us has actually grown up. Our systems have continued to grow in complexity and sophistication. Although a lot of our internal wiring hasn't had a chance to catch up yet.` },
   { body: `Most people can feel this even if they can't name it — something running beneath the surface that never got integrated, and structures designed to exploit that gap rather than close it.` },
   { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, I find myself whole rather than fragmented.` },
-  { body: `Regardless of the irregardless scar - here you are.`, italic: true, extraSpace: true, resonant: true, align: "right" },
+  { body: `Regardless of the irregardless scar — here you are.`, italic: true, extraSpace: true, resonant: true, align: "right" },
 ];
 
 const sections2 = [
