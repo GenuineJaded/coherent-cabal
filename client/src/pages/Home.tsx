@@ -168,7 +168,7 @@ export default function Home() {
         style={{
           maxWidth: "800px", // Increased overall width
           margin: "0 auto",
-          padding: "3.5rem 2rem 5rem",
+          padding: "3.5rem 2rem 0", // Removed bottom padding to center closing text between rules
           opacity: visible ? 1 : 0,
           transition: "opacity 0.8s ease",
           flex: 1,
@@ -277,13 +277,13 @@ export default function Home() {
           </Link>
         </div>
 
-        <hr className="rule-divider" />
+        <hr className="rule-divider" style={{ marginBottom: 0 }} />
 
-        <div style={{ textAlign: "center" }}>
-          <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, marginTop: "3rem", marginBottom: "1rem", fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
+        <div style={{ textAlign: "center", padding: "6rem 0" }}>
+          <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, marginBottom: "1rem", fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
             If this isn't yours, it isn't yours. No pitch, no persuasion.
           </p>
-          <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
+          <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, fontStyle: "italic", fontWeight: 400, color: "#a2b4a0", margin: 0 }}>
             If it is — trust the feeling.
           </p>
         </div>
