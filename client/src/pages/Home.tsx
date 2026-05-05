@@ -86,7 +86,6 @@ const sections = [
   { body: `There appears to be a mismatch between what we've built and how much of us has actually grown up. Our systems have continued to grow in complexity and sophistication. Although a lot of our internal wiring hasn't had a chance to catch up yet.` },
   { body: `Most people can feel this even if they can't name it — something running beneath the surface that never got integrated, and structures designed to exploit that gap rather than close it.` },
   { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, I find myself whole rather than fragmented.` },
-  { body: `If you're here, chances are - you are not fragmented, and may in fact have remained whole as well.`, italic: true, extraSpace: true, resonant: true },
   { body: `Regardless of the irregardless scar - here you are.`, italic: true, align: "right", resonant: true },
 ];
 
@@ -186,7 +185,7 @@ export default function Home() {
               fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
               textAlign: (s as any).align === "right" ? "right" : "left",
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
-              marginTop: (s as any).align === "right" ? "-2.25rem" : ((s as any).extraSpace ? "3rem" : "0"), // Reduced negative margin to prevent overlap
+              marginTop: (s as any).align === "right" ? "-3.75rem" : "0", 
               paddingRight: (s as any).align === "right" ? "1.5rem" : "0",
               position: "relative",
               zIndex: (s as any).align === "right" ? 10 : 1
@@ -283,10 +282,10 @@ export default function Home() {
 
         <hr className="rule-divider" />
 
-        <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, marginBottom: "1rem", fontStyle: "italic", fontWeight: 400, color: "#1A1A1E", opacity: 0.7 }}>
+        <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, marginBottom: "1rem", fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
           If this isn't yours, it isn't yours. No pitch, no persuasion.
         </p>
-        <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, fontStyle: "italic", fontWeight: 400, color: "#1A1A1E" }}>
+        <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
           If it is — trust the feeling.
         </p>
       </main>
