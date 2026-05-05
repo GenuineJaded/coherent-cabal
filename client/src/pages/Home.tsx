@@ -88,7 +88,7 @@ const sections = [
   { body: `Most people can feel this even if they can't name it — something running beneath the surface that never got integrated, and structures designed to exploit that gap rather than close it.` },
   { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, I find myself whole rather than fragmented.` },
   { body: `If you're here, chances are - you are not fragmented, and may in fact have remained whole as well.`, italic: true },
-  { body: `Regardless of the irregardless scar - here you are.`, italic: true, bold: true },
+  { body: `Regardless of the irregardless scar - here you are.`, italic: true, align: "right" },
 ];
 
 const sections2 = [
@@ -176,13 +176,36 @@ export default function Home() {
         }}
       >
         {sections.map((s, i) => (
-          <p key={i} className="font-serif" style={{ ...bodyStyle, fontStyle: s.italic ? "italic" : "normal", fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300) }}>{s.body}</p>
+          <p
+            key={i}
+            className="font-serif"
+            style={{
+              ...bodyStyle,
+              fontStyle: s.italic ? "italic" : "normal",
+              fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
+              textAlign: (s as any).align === "right" ? "right" : "left",
+              marginBottom: s.italic ? "2.25rem" : "1.5rem"
+            }}
+          >
+            {s.body}
+          </p>
         ))}
 
         <hr className="rule-divider" />
 
         {sections2.map((s, i) => (
-          <p key={i} className="font-serif" style={{ ...bodyStyle, fontStyle: s.italic ? "italic" : "normal", fontWeight: s.italic ? 400 : 300 }}>{s.body}</p>
+          <p
+            key={i}
+            className="font-serif"
+            style={{
+              ...bodyStyle,
+              fontStyle: s.italic ? "italic" : "normal",
+              fontWeight: s.italic ? 400 : 300,
+              marginBottom: s.italic ? "2.25rem" : "1.5rem"
+            }}
+          >
+            {s.body}
+          </p>
         ))}
 
         <hr className="rule-divider" />
@@ -212,7 +235,18 @@ export default function Home() {
         <hr className="rule-divider" />
 
         {sections5.map((s, i) => (
-          <p key={i} className="font-serif" style={{ ...bodyStyle, fontStyle: s.italic ? "italic" : "normal", fontWeight: s.italic ? 400 : 300 }}>{s.body}</p>
+          <p
+            key={i}
+            className="font-serif"
+            style={{
+              ...bodyStyle,
+              fontStyle: s.italic ? "italic" : "normal",
+              fontWeight: s.italic ? 400 : 300,
+              marginBottom: s.italic ? "2.25rem" : "1.5rem"
+            }}
+          >
+            {s.body}
+          </p>
         ))}
 
         {/* CTA — leads to Paradox Test (the only path forward) */}
