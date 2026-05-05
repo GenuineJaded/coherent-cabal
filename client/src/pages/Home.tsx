@@ -2,7 +2,7 @@
  * HOME PAGE — Page 1
  * Design: Quiet Modernist / Swiss Typographic
  * Theme: Light — #FAFAF8 bg, #1A1A1E text
- * Fonts: Cormorant Garamond (body) + Space Mono (labels/footer)
+ * Fonts: Lekton (body) + Space Mono (labels/footer)
  * Layout: SVG helix header, centered title, single narrow column, wide-edge footer
  * Nav: REMOVED — no skip-to-paradox link. User must read through to find the link.
  */
@@ -129,11 +129,12 @@ export default function Home() {
   }, []);
 
   const bodyStyle = {
-    fontSize: "1.2rem",
-    lineHeight: 1.75,
+    fontSize: "1.1rem",
+    lineHeight: 1.7,
     marginBottom: "1.5rem",
-    fontWeight: 300,
+    fontWeight: 400,
     color: "#1A1A1E",
+    fontFamily: "'Lekton', sans-serif",
   };
 
   return (
@@ -178,15 +179,15 @@ export default function Home() {
         {sections.map((s, i) => (
           <p
             key={i}
-            className="font-serif"
+            className="font-mono"
             style={{
               ...bodyStyle,
               fontStyle: s.italic ? "italic" : "normal",
-              fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
+              fontWeight: (s as any).bold ? 700 : 400,
               textAlign: (s as any).align === "right" ? "right" : "left",
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
-              marginTop: (s as any).align === "right" ? "-7.5rem" : "0",
-              paddingRight: (s as any).align === "right" ? "1.5rem" : "0",
+              marginTop: (s as any).align === "right" ? "-2.25rem" : "0",
+              paddingRight: (s as any).align === "right" ? "0.5rem" : "0",
               position: "relative",
               zIndex: (s as any).align === "right" ? 10 : 1
             }}
@@ -200,11 +201,11 @@ export default function Home() {
         {sections2.map((s, i) => (
           <p
             key={i}
-            className="font-serif"
+            className="font-mono"
             style={{
               ...bodyStyle,
               fontStyle: s.italic ? "italic" : "normal",
-              fontWeight: s.italic ? 400 : 300,
+              fontWeight: 400,
               marginBottom: s.italic ? "2.25rem" : "1.5rem"
             }}
           >
@@ -219,7 +220,7 @@ export default function Home() {
         </p>
         <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem 0" }}>
           {interests.map((item, i) => (
-            <li key={i} className="font-serif" style={{ fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "0.75rem", paddingLeft: "1.5rem", position: "relative", color: "#1A1A1E", fontWeight: 300 }}>
+            <li key={i} className="font-mono" style={{ ...bodyStyle, fontSize: "1.05rem", marginBottom: "0.75rem", paddingLeft: "1.5rem", position: "relative" }}>
               <span style={{ position: "absolute", left: 0, top: "0.1em", fontSize: "0.9rem", opacity: 0.4 }}>—</span>
               {item}
             </li>
@@ -227,13 +228,13 @@ export default function Home() {
         </ul>
 
         {sections3.map((s, i) => (
-          <p key={i} className="font-serif" style={bodyStyle}>{s.body}</p>
+          <p key={i} className="font-mono" style={bodyStyle}>{s.body}</p>
         ))}
 
         <hr className="rule-divider" />
 
         {sections4.map((s, i) => (
-          <p key={i} className="font-serif" style={bodyStyle}>{s.body}</p>
+          <p key={i} className="font-mono" style={bodyStyle}>{s.body}</p>
         ))}
 
         <hr className="rule-divider" />
@@ -241,11 +242,11 @@ export default function Home() {
         {sections5.map((s, i) => (
           <p
             key={i}
-            className="font-serif"
+            className="font-mono"
             style={{
               ...bodyStyle,
               fontStyle: s.italic ? "italic" : "normal",
-              fontWeight: s.italic ? 400 : 300,
+              fontWeight: 400,
               marginBottom: s.italic ? "2.25rem" : "1.5rem"
             }}
           >
@@ -267,6 +268,7 @@ export default function Home() {
                 cursor: "pointer",
                 transition: "border-color 0.2s",
                 display: "inline-block",
+                fontFamily: "'Lekton', sans-serif"
               }}
               onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(26,26,30,0.9)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(26,26,30,0.35)"; }}
@@ -278,10 +280,10 @@ export default function Home() {
 
         <hr className="rule-divider" />
 
-        <p className="font-serif" style={{ fontSize: "1.15rem", lineHeight: 1.75, marginBottom: "1rem", fontStyle: "italic", fontWeight: 400, color: "#1A1A1E", opacity: 0.7 }}>
+        <p className="font-mono" style={{ ...bodyStyle, fontSize: "1.1rem", marginBottom: "1rem", fontStyle: "italic", opacity: 0.7 }}>
           If this isn't yours, it isn't yours. No pitch, no persuasion.
         </p>
-        <p className="font-serif" style={{ fontSize: "1.15rem", lineHeight: 1.75, fontStyle: "italic", fontWeight: 400, color: "#1A1A1E" }}>
+        <p className="font-mono" style={{ ...bodyStyle, fontSize: "1.1rem", fontStyle: "italic" }}>
           If it is — trust the feeling.
         </p>
       </main>
@@ -294,18 +296,18 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono"
-            style={{ fontSize: "0.7rem", letterSpacing: "0.1em", color: "#6D28D9", opacity: 1, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = "#7C3AED"; e.currentTarget.style.borderBottomColor = "rgba(124,58,237,0.6)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = "#6D28D9"; e.currentTarget.style.borderBottomColor = "transparent"; }}
+            style={{ fontSize: "0.7rem", letterSpacing: "0.1em", color: "#6D28D9 !important", opacity: "1 !important", textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.setProperty('color', '#7C3AED', 'important'); e.currentTarget.style.borderBottomColor = "rgba(124,58,237,0.6)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.setProperty('color', '#6D28D9', 'important'); e.currentTarget.style.borderBottomColor = "transparent"; }}
           >
             resonant frequency tuning
           </a>
           <a
             href="mailto:michaelmistree@mistree.space"
             className="font-mono"
-            style={{ fontSize: "0.7rem", letterSpacing: "0.08em", color: "#6D28D9", opacity: 1, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = "#7C3AED"; e.currentTarget.style.borderBottomColor = "rgba(124,58,237,0.6)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = "#6D28D9"; e.currentTarget.style.borderBottomColor = "transparent"; }}
+            style={{ fontSize: "0.7rem", letterSpacing: "0.08em", color: "#6D28D9 !important", opacity: "1 !important", textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.setProperty('color', '#7C3AED', 'important'); e.currentTarget.style.borderBottomColor = "rgba(124,58,237,0.6)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.setProperty('color', '#6D28D9', 'important'); e.currentTarget.style.borderBottomColor = "transparent"; }}
           >
             michaelmistree@mistree.space
           </a>
