@@ -185,8 +185,10 @@ export default function Home() {
               fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
               textAlign: (s as any).align === "right" ? "right" : "left",
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
-              marginTop: (s as any).align === "right" ? "-3.5rem" : "0",
-              paddingRight: (s as any).align === "right" ? "1rem" : "0"
+              marginTop: (s as any).align === "right" ? "-7.5rem" : "0",
+              paddingRight: (s as any).align === "right" ? "1.5rem" : "0",
+              position: "relative",
+              zIndex: (s as any).align === "right" ? 10 : 1
             }}
           >
             {s.body}
@@ -292,18 +294,18 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono"
-            style={{ fontSize: "0.65rem", letterSpacing: "0.1em", color: "#1A1A1E", opacity: 0.4, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.opacity = "0.8"; e.currentTarget.style.borderBottomColor = "rgba(26,26,30,0.4)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.4"; e.currentTarget.style.borderBottomColor = "transparent"; }}
+            style={{ fontSize: "0.7rem", letterSpacing: "0.1em", color: "#6D28D9", opacity: 1, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = "#7C3AED"; e.currentTarget.style.borderBottomColor = "rgba(124,58,237,0.6)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = "#6D28D9"; e.currentTarget.style.borderBottomColor = "transparent"; }}
           >
             resonant frequency tuning
           </a>
           <a
             href="mailto:michaelmistree@mistree.space"
             className="font-mono"
-            style={{ fontSize: "0.65rem", letterSpacing: "0.08em", color: "#1A1A1E", opacity: 0.4, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.opacity = "0.8"; e.currentTarget.style.borderBottomColor = "rgba(26,26,30,0.4)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.4"; e.currentTarget.style.borderBottomColor = "transparent"; }}
+            style={{ fontSize: "0.7rem", letterSpacing: "0.08em", color: "#6D28D9", opacity: 1, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = "#7C3AED"; e.currentTarget.style.borderBottomColor = "rgba(124,58,237,0.6)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = "#6D28D9"; e.currentTarget.style.borderBottomColor = "transparent"; }}
           >
             michaelmistree@mistree.space
           </a>

@@ -487,18 +487,18 @@ export default function Specification() {
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono"
-            style={{ fontSize: "0.65rem", letterSpacing: "0.1em", color: "#E8E8E0", opacity: 0.25, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.opacity = "0.6"; e.currentTarget.style.borderBottomColor = "rgba(232,232,224,0.3)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.25"; e.currentTarget.style.borderBottomColor = "transparent"; }}
+            style={{ fontSize: "0.7rem", letterSpacing: "0.1em", color: "#A78BFA", opacity: 1, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = "#C4B5FD"; e.currentTarget.style.borderBottomColor = "rgba(196,181,253,0.5)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = "#A78BFA"; e.currentTarget.style.borderBottomColor = "transparent"; }}
           >
             resonant frequency tuning
           </a>
           <a
             href="mailto:michaelmistree@mistree.space"
             className="font-mono"
-            style={{ fontSize: "0.65rem", letterSpacing: "0.08em", color: "#E8E8E0", opacity: 0.25, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.opacity = "0.6"; e.currentTarget.style.borderBottomColor = "rgba(232,232,224,0.3)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.25"; e.currentTarget.style.borderBottomColor = "transparent"; }}
+            style={{ fontSize: "0.7rem", letterSpacing: "0.08em", color: "#A78BFA", opacity: 1, textDecoration: "none", borderBottom: "1px solid transparent", transition: "all 0.2s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = "#C4B5FD"; e.currentTarget.style.borderBottomColor = "rgba(196,181,253,0.5)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = "#A78BFA"; e.currentTarget.style.borderBottomColor = "transparent"; }}
           >
             michaelmistree@mistree.space
           </a>
