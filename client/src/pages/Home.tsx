@@ -257,22 +257,22 @@ export default function Home() {
         ))}
 
         {/* CTA — leads to Paradox Test (the only path forward) */}
-        <div style={{ margin: "2.5rem 0" }}>
+        <div style={{ margin: "5rem 0" }}>
           <Link href="/paradox">
             <span
               className="font-mono"
               style={{
                 fontSize: "0.8rem",
                 letterSpacing: "0.06em",
-                color: "#1A1A1E",
-                borderBottom: "1px solid rgba(26,26,30,0.35)",
+                color: "#4C1D95",
+                borderBottom: "1px solid rgba(76,29,149,0.35)",
                 paddingBottom: "2px",
                 cursor: "pointer",
-                transition: "border-color 0.2s",
+                transition: "all 0.2s",
                 display: "inline-block",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(26,26,30,0.9)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(26,26,30,0.35)"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = "#6D28D9"; e.currentTarget.style.borderColor = "rgba(109,40,217,0.9)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = "#4C1D95"; e.currentTarget.style.borderColor = "rgba(76,29,149,0.35)"; }}
             >
               → Read the full specification
             </span>
