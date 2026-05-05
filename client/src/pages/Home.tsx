@@ -255,7 +255,7 @@ export default function Home() {
         ))}
 
         {/* CTA — leads to Paradox Test (the only path forward) */}
-        <div style={{ margin: "5rem 0" }}>
+        <div style={{ margin: "5rem 0", textAlign: "right" }}>
           <Link href="/paradox">
             <span
               className="font-mono"
@@ -279,12 +279,14 @@ export default function Home() {
 
         <hr className="rule-divider" />
 
-        <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, marginTop: "3rem", marginBottom: "1rem", fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
-          If this isn't yours, it isn't yours. No pitch, no persuasion.
-        </p>
-        <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
-          If it is — trust the feeling.
-        </p>
+        <div style={{ textAlign: "center" }}>
+          <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, marginTop: "3rem", marginBottom: "1rem", fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
+            If this isn't yours, it isn't yours. No pitch, no persuasion.
+          </p>
+          <p className="font-serif" style={{ fontSize: "1rem", lineHeight: 1.75, fontStyle: "italic", fontWeight: 400, color: "#a2b4a0" }}>
+            If it is — trust the feeling.
+          </p>
+        </div>
       </main>
 
       {/* Footer — items pushed to true page edges */}
