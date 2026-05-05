@@ -86,8 +86,8 @@ const sections = [
   { body: `There appears to be a mismatch between what we've built and how much of us has actually grown up. Our systems have continued to grow in complexity and sophistication. Although a lot of our internal wiring hasn't had a chance to catch up yet.` },
   { body: `Most people can feel this even if they can't name it — something running beneath the surface that never got integrated, and structures designed to exploit that gap rather than close it.` },
   { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, I find myself whole rather than fragmented.` },
-  { body: `If you're here, chances are - you are not fragmented, and may in fact have remained whole as well.`, italic: true, extraSpace: true, small: true },
-  { body: `Regardless of the irregardless scar - here you are.`, italic: true, align: "right", small: true },
+  { body: `If you're here, chances are - you are not fragmented, and may in fact have remained whole as well.`, italic: true, extraSpace: true, restored: true },
+  { body: `Regardless of the irregardless scar - here you are.`, italic: true, align: "right", restored: true },
 ];
 
 const sections2 = [
@@ -181,13 +181,14 @@ export default function Home() {
             className="font-serif"
             style={{
               ...bodyStyle,
-              fontSize: (s as any).small ? "1rem" : bodyStyle.fontSize, // Sized down to ~10 (1rem)
+              fontSize: (s as any).restored ? "1.2rem" : ((s as any).small ? "1rem" : bodyStyle.fontSize),
+              color: (s as any).restored ? "#4B5563" : bodyStyle.color, // Slightly dimmed gray
               fontStyle: s.italic ? "italic" : "normal",
               fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
               textAlign: (s as any).align === "right" ? "right" : "left",
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
-              marginTop: (s as any).align === "right" ? "-3.5rem" : ((s as any).extraSpace ? "3rem" : "0"),
-              paddingRight: (s as any).align === "right" ? "1rem" : "0",
+              marginTop: (s as any).align === "right" ? "-3.75rem" : ((s as any).extraSpace ? "3rem" : "0"),
+              paddingRight: (s as any).align === "right" ? "1.5rem" : "0",
               position: "relative",
               zIndex: (s as any).align === "right" ? 10 : 1
             }}
@@ -204,7 +205,7 @@ export default function Home() {
             className="font-serif"
             style={{
               ...bodyStyle,
-              fontSize: (s as any).small ? "1rem" : bodyStyle.fontSize, // Sized down to ~10 (1rem)
+              fontSize: (s as any).small ? "1rem" : bodyStyle.fontSize,
               fontStyle: s.italic ? "italic" : "normal",
               fontWeight: s.italic ? 400 : 300,
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
@@ -247,7 +248,7 @@ export default function Home() {
             className="font-serif"
             style={{
               ...bodyStyle,
-              fontSize: (s as any).small ? "1rem" : bodyStyle.fontSize, // Sized down to ~10 (1rem)
+              fontSize: (s as any).small ? "1rem" : bodyStyle.fontSize,
               fontStyle: s.italic ? "italic" : "normal",
               fontWeight: s.italic ? 400 : 300,
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
