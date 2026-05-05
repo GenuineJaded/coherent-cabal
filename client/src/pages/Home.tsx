@@ -184,7 +184,8 @@ export default function Home() {
               fontStyle: s.italic ? "italic" : "normal",
               fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
               textAlign: (s as any).align === "right" ? "right" : "left",
-              marginBottom: s.italic ? "2.25rem" : "1.5rem"
+              marginBottom: s.italic ? "2.25rem" : "1.5rem",
+              marginTop: (s as any).align === "right" ? "-2rem" : "0"
             }}
           >
             {s.body}
