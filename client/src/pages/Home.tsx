@@ -167,7 +167,7 @@ export default function Home() {
       {/* Main content */}
       <main
         style={{
-          maxWidth: "800px",
+          maxWidth: "800px", // Increased overall width
           margin: "0 auto",
           padding: "3.5rem 2rem 5rem",
           opacity: visible ? 1 : 0,
@@ -186,7 +186,7 @@ export default function Home() {
               fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
               textAlign: (s as any).align === "right" ? "right" : "left",
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
-              marginTop: (s as any).align === "right" ? "-3.75rem" : ((s as any).extraSpace ? "3rem" : "0"),
+              marginTop: (s as any).align === "right" ? "-2.25rem" : ((s as any).extraSpace ? "3rem" : "0"), // Reduced negative margin to prevent overlap
               paddingRight: (s as any).align === "right" ? "1.5rem" : "0",
               position: "relative",
               zIndex: (s as any).align === "right" ? 10 : 1
