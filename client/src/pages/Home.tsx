@@ -86,7 +86,7 @@ const sections = [
   { body: `There appears to be a mismatch between what we've built and how much of us has actually grown up. Our systems have continued to grow in complexity and sophistication. Although a lot of our internal wiring hasn't had a chance to catch up yet.` },
   { body: `Most people can feel this even if they can't name it — something running beneath the surface that never got integrated, and structures designed to exploit that gap rather than close it.` },
   { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, I find myself whole rather than fragmented.` },
-  { body: `Regardless of the irregardless scar - here you are.`, italic: true, align: "right", resonant: true },
+  { body: `Regardless of the irregardless scar - here you are.`, italic: true, extraSpace: true, resonant: true },
 ];
 
 const sections2 = [
@@ -180,15 +180,12 @@ export default function Home() {
             className="font-serif"
             style={{
               ...bodyStyle,
-              color: (s as any).resonant ? "#a2b4a0" : bodyStyle.color, // Sage green for resonant sections
+              color: (s as any).resonant ? "#a2b4a0" : bodyStyle.color,
               fontStyle: s.italic ? "italic" : "normal",
               fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
-              textAlign: (s as any).align === "right" ? "right" : "left",
+              textAlign: "left",
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
-              marginTop: (s as any).align === "right" ? "-2.5rem" : ((s as any).extraSpace ? "3rem" : "0"), // Relaxed negative margin
-              paddingRight: (s as any).align === "right" ? "1.5rem" : "0",
-              position: "relative",
-              zIndex: (s as any).align === "right" ? 10 : 1
+              marginTop: (s as any).extraSpace ? "3rem" : "0"
             }}
           >
             {s.body}
