@@ -68,6 +68,12 @@ blockquote {
   color: #555;
 }
 
+em, strong {
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
 code {
   font-family: "Monaco", "Courier New", monospace;
   background-color: #f0f0ee;
@@ -107,9 +113,27 @@ footer {
   border-top: 1px solid #e0e0dc;
   padding: 3rem 0;
   margin-top: 6rem;
-  text-align: center;
   color: #999;
   font-size: 0.95rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 0 2rem;
+}
+
+.footer-left a, .footer-right a {
+  color: #999;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+  color: #1a5490;
+  border-bottom-color: #1a5490;
 }
 
 /* Navigation */
