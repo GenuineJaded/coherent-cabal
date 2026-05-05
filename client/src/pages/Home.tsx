@@ -185,7 +185,8 @@ export default function Home() {
               fontWeight: (s as any).bold ? 700 : (s.italic ? 400 : 300),
               textAlign: (s as any).align === "right" ? "right" : "left",
               marginBottom: s.italic ? "2.25rem" : "1.5rem",
-              marginTop: (s as any).align === "right" ? "-2rem" : "0"
+              marginTop: (s as any).align === "right" ? "-3.5rem" : "0",
+              paddingRight: (s as any).align === "right" ? "1rem" : "0"
             }}
           >
             {s.body}
