@@ -83,34 +83,31 @@ function HelixHeader() {
 }
 
 const sections = [
-  { body: `There appears to be a mismatch between what we've built and how much of us has actually grown up. Our systems have continued to grow in complexity and sophistication. Although a lot of our internal wiring hasn't had a chance to catch up yet.` },
-  { body: `Most people can feel this even if they can't name it — something running beneath the surface that never got integrated, and structures designed to exploit that gap rather than close it.` },
-  { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, wholeness remains possible instead of fragmentation.` },
+  { body: `There appears to be a mismatch between what we've built and what has had time to mature inside us. Our systems appear to have grown in complexity and sophistication. Perhaps our internal wiring hasn't yet had a chance to catch up?` },
+  { body: `I imagine most people can feel something — similar, but not identical — a current running beneath the surface.` },
+  { body: `As the sheen of novelty grows brighter, it becomes time to slow down and distill this into something with meaningful value and worth.` },
+  { body: `Beneath the wreckage and roots lies - dormant and hungry - potential for a world of endless awe, inspiration, and wonder.` },
   { body: `Regardless of the irregardless scar — here you are.`, italic: true, extraSpace: true, resonant: true, align: "right" },
 ];
 
 const sections2 = [
   { body: `Most spaces aren't built for people who stayed whole. They're built for engagement, for performance, for the kind of participation that requires you to flatten yourself to fit. Communities that claim authenticity but still demand a specific shape. Platforms that reward fragmentation because fragments are easier to circulate.` },
   { body: `Many people are discovering this tension now — not because they changed, but because the environment did.` },
-  { body: `Some people adapted to this. Some people couldn't, or wouldn't.` },
-  { body: `This space is for anyone who recognizes that tension — not as a failure to adapt, but as evidence of something harder still being protected.`, italic: true, extraSpace: true, resonant: true },
+  { body: `Every configuration is entirely unique.` },
+  { body: `This space is for those who recognize this tension — not as a failure to adapt, but as evidence of something delicate still being protected.`, italic: true, extraSpace: true, resonant: true },
 ];
 
 const interests = [
   "Coherence that survives contact with complexity",
   "Resonance that doesn't require merger",
-  "Work that resists easy consumption because it's dense, not because it's obscure",
+  "Work that's gripping and engaging, regardless of its conceptual irregularity",
   "Collaboration without consensus, proximity without assimilation",
 ];
 
 const sections3 = [
-  { body: `If you've been building alone because the available containers couldn't hold what you're making, you're not the problem. The containers are the problem.` },
-  { body: `You might not need community. But you might want proximity to others doing similar work, without the usual costs.` },
-];
-
-const sections4 = [
-  { body: `This isn't a movement. There's no mythology to adopt, no leader to follow, no performance of belonging required.` },
-  { body: `It's closer to a recognition protocol. A commons, not a house. A way for coherent systems to find each other.` },
+  { body: `Regardless of where you've been building. If this speaks to you. You belong here.` },
+  { body: `Belonging here is not granted by permission, but discovered through contact.` },
+  { body: `Regardless of wants and needs, this space will only support a certain type of mind.` },
 ];
 
 const sections5 = [
@@ -226,12 +223,6 @@ export default function Home() {
         </ul>
 
         {sections3.map((s, i) => (
-          <p key={i} className="font-serif" style={bodyStyle}>{s.body}</p>
-        ))}
-
-        <hr className="rule-divider" />
-
-        {sections4.map((s, i) => (
           <p key={i} className="font-serif" style={bodyStyle}>{s.body}</p>
         ))}
 
