@@ -151,6 +151,7 @@ function InvertedHelixHeader() {
   const amplitude = 22;
   const cy = H / 2;
   const points = 200;
+  const duration = "5s";
 
   const strand1: string[] = [];
   const strand2: string[] = [];
@@ -185,6 +186,25 @@ function InvertedHelixHeader() {
         style={{ maxWidth: "100%", overflow: "visible" }}
         aria-hidden="true"
       >
+        <style>
+          {`
+            @keyframes cabal-rung-pulse {
+              0%, 100% { opacity: 0.45; transform: scaleY(0.86); }
+              50% { opacity: 1; transform: scaleY(1); }
+            }
+
+            @keyframes cabal-strand-roll {
+              0% { stroke-dashoffset: 0; opacity: 0.38; }
+              50% { opacity: 0.62; }
+              100% { stroke-dashoffset: -42; opacity: 0.38; }
+            }
+
+            @keyframes cabal-node-breathe {
+              0%, 100% { opacity: 0.42; transform: scale(0.78); }
+              50% { opacity: 0.8; transform: scale(1); }
+            }
+          `}
+        </style>
         {/* Rungs */}
         {rungs.map((rung, i) => (
           <line
@@ -195,6 +215,12 @@ function InvertedHelixHeader() {
             y2={rung.y2}
             stroke="rgba(232,232,224,0.18)"
             strokeWidth="0.8"
+            style={{
+              transformBox: "fill-box",
+              transformOrigin: "center",
+              animation: `cabal-rung-pulse ${duration} ease-in-out infinite`,
+              animationDelay: `${(i / rungs.length) * -5}s`,
+            }}
           />
         ))}
         {/* Strand 1 */}
@@ -205,6 +231,8 @@ function InvertedHelixHeader() {
           strokeWidth="1.2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          strokeDasharray="18 10"
+          style={{ animation: `cabal-strand-roll ${duration} linear infinite` }}
         />
         {/* Strand 2 */}
         <path
@@ -214,12 +242,36 @@ function InvertedHelixHeader() {
           strokeWidth="1.2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          strokeDasharray="18 10"
+          style={{ animation: `cabal-strand-roll ${duration} linear infinite reverse` }}
         />
         {/* Peak nodes */}
         {rungs.map((rung, i) => (
           <g key={`node-${i}`}>
-            <circle cx={rung.x} cy={rung.y1} r="2.2" fill="rgba(232,232,224,0.55)" />
-            <circle cx={rung.x} cy={rung.y2} r="2.2" fill="rgba(232,232,224,0.55)" />
+            <circle
+              cx={rung.x}
+              cy={rung.y1}
+              r="2.2"
+              fill="rgba(232,232,224,0.55)"
+              style={{
+                transformBox: "fill-box",
+                transformOrigin: "center",
+                animation: `cabal-node-breathe ${duration} ease-in-out infinite`,
+                animationDelay: `${(i / rungs.length) * -5}s`,
+              }}
+            />
+            <circle
+              cx={rung.x}
+              cy={rung.y2}
+              r="2.2"
+              fill="rgba(232,232,224,0.55)"
+              style={{
+                transformBox: "fill-box",
+                transformOrigin: "center",
+                animation: `cabal-node-breathe ${duration} ease-in-out infinite`,
+                animationDelay: `${((i / rungs.length) * -5) - 2.5}s`,
+              }}
+            />
           </g>
         ))}
       </svg>
