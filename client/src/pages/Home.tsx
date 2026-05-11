@@ -94,7 +94,7 @@ const sections2 = [
   { body: `Most spaces aren't built for people who stayed whole. They're built for engagement, for performance, for the kind of participation that requires you to flatten yourself to fit. Communities that claim authenticity but still demand a specific shape. Platforms that reward fragmentation because fragments are easier to circulate.` },
   { body: `Many people are discovering this tension now — not because they changed, but because the environment did.` },
   { body: `Every configuration is entirely unique.` },
-  { body: `This space is for those who recognize this tension - and wish to resolve it.`, italic: true, extraSpace: true, resonant: true },
+  { body: `This space is for those who recognize this tension - and wish to work with it.`, italic: true, extraSpace: true, resonant: true },
 ];
 
 const interests = [

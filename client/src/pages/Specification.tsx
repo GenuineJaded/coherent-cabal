@@ -67,7 +67,6 @@ const SPEC_SECTIONS: Section[] = [
       "No central mythology needs to be adopted. No cosmology has to be learned. As this remains true, a space emerges where elaborate internal universes can remain intact, near each other, without being opened by force.",
       "A scaffold, not a structure.",
       "Scaffolds support construction by giving resonance somewhere to form. They are temporary, functional, and not the point. When a scaffold comes to its natural ending, it dissolves. Not lost, but no longer needing to hold the same shape. The Cabal supports the externalization of work — art, systems, philosophy, tools — without becoming the work itself.",
-      "A space for space A",
       "Structural coherence is the entry condition. Resonance is what becomes possible. Not promised — resonance cannot be engineered — but the architecture is designed to let it emerge. Connection that strengthens identity rather than dissolves it.",
     ],
   },
@@ -133,13 +132,13 @@ const SPEC_SECTIONS: Section[] = [
   {
     label: "HOW TO PROCEED",
     body: [
-      "Find yourself. Don't trust yourself. Question yourself. Love yourself. Hate yourself. Be your self.",
+      "Find yourself. Question yourself. Contradict yourself. Let yourself become discoverable.",
       "No application. No initiation. No proof of belonging.",
       "Use what is here. Build what you build. Leave when leaving makes sense.",
     ],
   },
   {
-    body: ["Structural coherence does not require rigidity. What's required has been described, in great detail, on your pathway here."],
+    body: ["Structural coherence does not require rigidity. What's required has been described with as much precision as this pathway can currently hold."],
   },
 ];
 
