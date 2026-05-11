@@ -85,7 +85,7 @@ function HelixHeader() {
 const sections = [
   { body: `There appears to be a mismatch between what we've built and how much of us has actually grown up. Our systems have continued to grow in complexity and sophistication. Although a lot of our internal wiring hasn't had a chance to catch up yet.` },
   { body: `Most people can feel this even if they can't name it — something running beneath the surface that never got integrated, and structures designed to exploit that gap rather than close it.` },
-  { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, I find myself whole rather than fragmented.` },
+  { body: `The shine of novelty has continued to grow in its intensity over the past decade or so. The noise of useless emotional taxation has been reframed as the new expected normal. And still, somehow, wholeness remains possible instead of fragmentation.` },
   { body: `Regardless of the irregardless scar — here you are.`, italic: true, extraSpace: true, resonant: true, align: "right" },
 ];
 
@@ -93,7 +93,7 @@ const sections2 = [
   { body: `Most spaces aren't built for people who stayed whole. They're built for engagement, for performance, for the kind of participation that requires you to flatten yourself to fit. Communities that claim authenticity but still demand a specific shape. Platforms that reward fragmentation because fragments are easier to circulate.` },
   { body: `Many people are discovering this tension now — not because they changed, but because the environment did.` },
   { body: `Some people adapted to this. Some people couldn't, or wouldn't.` },
-  { body: `This space is for the second group — not because they failed at adapting, but because they succeeded at something harder.`, italic: true, extraSpace: true, resonant: true },
+  { body: `This space is for anyone who recognizes that tension — not as a failure to adapt, but as evidence of something harder still being protected.`, italic: true, extraSpace: true, resonant: true },
 ];
 
 const interests = [

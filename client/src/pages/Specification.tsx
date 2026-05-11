@@ -46,7 +46,7 @@ const SPEC_SECTIONS: Section[] = [
       },
       {
         term: "Cabal",
-        def: "A small group working toward something. Here: a recognition protocol for coherent systems seeking proximity without merger.",
+        def: "A word with layers. Depending on how it is approached, it can mean conspiracy, council, working circle, or hidden coordination. Here: a recognition protocol for coherent systems seeking proximity without merger.",
       },
     ],
   },
@@ -54,21 +54,21 @@ const SPEC_SECTIONS: Section[] = [
     label: "WHY COHERENCE MATTERS NOW",
     body: [
       "The modern information environment is fragmented by design. Attention is monetized through interruption. Identity is performed across contexts that reward incompatible versions of self.",
-      "Most people navigate this by compartmentalizing — keeping contradictions in separate rooms so they never have to meet.",
+      "For many, compartmentalizing may have been the only available way to navigate this — keeping contradictions in separate rooms until there is enough safety for them to meet.",
       "This works until it doesn't. The cost is paid in exhaustion, dissociation, and the slow erosion of knowing what you actually think.",
       "Coherent Cabal exists for people who have decided the cost is too high. Not people who have achieved coherence — that's not a destination — but people committed to the process: resolving contradictions, inhabiting paradox, integrating rather than fragmenting.",
-      "Fragmented systems leak energy. They cannot build anything requiring sustained attention across time. If you want to build, you need to cohere.",
+      "Fragmented systems leak energy. They struggle to sustain attention across time. If something is meant to last, it needs to contain structural coherence.",
     ],
   },
   {
     label: "WHAT COHERENT CABAL IS",
     body: [
       "A commons, not a house.",
-      "There is no central mythology to adopt. No cosmology to learn. Individual members may have elaborate internal universes; these remain theirs. The Cabal does not require you to enter anyone else's frame, nor to open yours.",
+      "No central mythology needs to be adopted. No cosmology has to be learned. As this remains true, a space emerges where elaborate internal universes can remain intact, near each other, without being opened by force.",
       "A scaffold, not a structure.",
-      "Scaffolds support construction. They are temporary, functional, and not the point. The Cabal supports the externalization of work — art, systems, philosophy, tools — without becoming the work itself.",
-      "A space for cohesive resonance.",
-      "Coherence is the entry condition. Resonance is what becomes possible. Not promised — resonance cannot be engineered — but the architecture is designed to let it emerge. Connection that strengthens identity rather than dissolves it.",
+      "Scaffolds support construction by giving resonance somewhere to form. They are temporary, functional, and not the point. When a scaffold comes to its natural ending, it dissolves. Not lost, but no longer needing to hold the same shape. The Cabal supports the externalization of work — art, systems, philosophy, tools — without becoming the work itself.",
+      "A space for space A",
+      "Structural coherence is the entry condition. Resonance is what becomes possible. Not promised — resonance cannot be engineered — but the architecture is designed to let it emerge. Connection that strengthens identity rather than dissolves it.",
     ],
   },
   {
@@ -84,14 +84,14 @@ const SPEC_SECTIONS: Section[] = [
     label: "COMPATIBILITY CONDITIONS",
     body: ["You may find this space useful if:"],
     list: [
-      "You can hold paradox without rushing toward resolution",
-      "You recognize the difference between contradiction and paradox, and respond to each appropriately",
-      "You build from integration rather than toward approval",
-      "You have working terms with your own complexity — not mastery, but functional relationship",
-      "You are post-trauma but not post-responsibility",
-      "You find most \"authentic\" spaces performative, but haven't become cynical about authenticity itself",
-      "You create work that resists easy consumption — not from obscurantism, but from density",
-      "You can collaborate without requiring consensus",
+      "Paradox does not always need to be rushed into resolution",
+      "Contradiction and paradox may ask for different kinds of attention",
+      "Integration can be a stronger orientation than approval",
+      "Complexity does not have to be mastered before it can be related to",
+      "Trauma may be real without removing responsibility",
+      "\"Authentic\" spaces can feel performative without making authenticity itself false",
+      "Dense work may resist easy consumption without becoming obscure",
+      "Collaboration does not always require consensus",
     ],
   },
   {
@@ -110,6 +110,8 @@ const SPEC_SECTIONS: Section[] = [
     list: [
       "Non-interference with others' frames",
       "Tolerance for ambiguity in shared spaces",
+      "Clear communication and respect for stated boundaries",
+      "Recognition that any human being may be carrying something heavier than you can see",
       "Responsibility for your own integration",
       "Collaboration and understanding over expectations",
     ],
@@ -117,27 +119,27 @@ const SPEC_SECTIONS: Section[] = [
   {
     label: "ON LEADERSHIP",
     body: [
-      "There is no center. Individual projects may have leads. Collaborations may have asymmetric roles. The Cabal itself has no leader, no founder to defer to, no hierarchy to navigate.",
-      "This is not leaderlessness as ideology. It is leaderlessness as architecture. The structure does not require a center to hold.",
+      "There is no fixed center. The center is given space to be filled when a project, collaboration, or moment requires one. Roles may become asymmetric without becoming hierarchy. The Cabal itself has no leader, no founder to defer to, no permanent center to navigate.",
+      "This is not leaderlessness as ideology. It is an architecture that can hold without a permanent center.",
     ],
   },
   {
     label: "ON OUTPUT",
     body: [
-      "The Cabal may produce artifacts: tools, frameworks, art, writing, systems. These are released without requiring attribution. Contributors may claim their work or not. Collaborative work may be credited to the Cabal, or to no one.",
+      "The Cabal may produce artifacts. Their shape is of no true consequence. It is their creation, and the relationship formed through that creation, that changes what was once called by every name language could give it. Attribution is available, not demanded. Contributors may name their work, share it collectively, or let it move without a fixed source.",
       "The work matters. The source is optional.",
     ],
   },
   {
     label: "HOW TO PROCEED",
     body: [
-      "If this document describes something you want proximity to, you are already proximate.",
+      "Find yourself. Don't trust yourself. Question yourself. Love yourself. Hate yourself. Be your self.",
       "No application. No initiation. No proof of belonging.",
       "Use what is here. Build what you build. Leave when leaving makes sense.",
     ],
   },
   {
-    body: ["This specification may evolve. Coherence is not rigidity."],
+    body: ["Structural coherence does not require rigidity. What's required has been described, in great detail, on your pathway here."],
   },
 ];
 
