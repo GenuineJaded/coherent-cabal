@@ -14,6 +14,7 @@ type Phase = "boot" | "prompt" | "input" | "glitching" | "done";
 
 const BOOT_LINES = [
   "COHERENT CABAL // INTERFACE v0.1",
+  "binary dissolution distillation.........",
   "scanning for coherence signature........",
   "mapping contradiction topology..........",
   "resolving paradox threshold..............",
